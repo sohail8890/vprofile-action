@@ -23,6 +23,10 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
 
+    # Build the project
+      - name: Build Project
+        run: mvn clean install
+
       # Setup sonar-scanner\
       - name: Setup SonarQube
         uses: warchant/setup-sonar-scanner@v7 
